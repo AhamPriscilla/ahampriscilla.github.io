@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Source+Sans+Pro&display=swap');
+/*
+font-family: 'Homemade Apple', cursive; For the logo
+font-family: 'Source Sans Pro', sans-serif; For the Whole Body
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+ /*This ::-webkit features style the scrollbar: 
+    size, color of draggable bar & color on hover*/
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffb62e;
+}
+
+.header {
+   background-color: transparent;
+   position: fixed;
+   top: 0;
+   width: 100vw;
+   height: auto;
+   z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+#logo {
+    font-family: 'Homemade Apple', cursive;
+    color: #000000;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 1px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+    padding: 0 1.5rem;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+/*Animate the active hamburger each bar at time*/
+/*This will form the x that will be clicked on to close the menu*/
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 4rem;
+    flex-direction: column;
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-item {
+    margin: 2.5rem 0;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #fafafa;
+    transition: color .6s, border-bottom .6s;
+}
+
+.nav-link:hover {
+    color: #ffb62e;
+    border-bottom: 1px solid #ffb62e;
+}
+
+#main {
+    width: 75vw;
+    height: 100%;
+    margin: 70px auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.welcome-pic {
+    max-width: 400px;
+    height: auto;
+    padding: .5rem;
+    border-radius: 50px ;
+}
+
+.about-me {
+    margin: .5rem auto;
+    padding: 1rem;
+    max-width: 40vw;
+    text-align: start;
+    color: #000000;
+    line-height: 1.8;
+}
+
+.about-head {
+    padding: 1rem 0;
+}
+
+.about-me > p {
+    padding-bottom: 20px;
+}
+
+.illustrator {
+    color: #1e87e2;
+    transition: color .3s, border-bottom .3s;
+}
+
+.illustrator:hover {
+    color: #ffb62e;
+    border-bottom: 1px solid #ffb62e;
+}
+
+.resume-link {
+    padding-top: 50px;
+    max-width: fit-content;
+}
+
+#resume {
+    display: inline-block;
+    color: #fafafa;
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: background-color .6s, color .6s, border .6s, border-radius .6s;
+}
+
+#resume:hover {
+    color: #ffb62e;
+    border: 1px solid #ffb62e;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+#sell-it {
+    width: 80vw;
+    height: 100%;
+    color: #000000;
+    padding: 1.8rem ;
+    margin: 20px auto;
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-bits {
+    max-width: 45%;
+    height: auto;
+    margin: 10px 0;
+    padding: 1.8rem;
+    border-radius: 50px;
+    line-height: 30px;
+    background: linear-gradient(to bottom, #FAFAFA, #E6DADA);
+}
+
+.tools-bits {
+    margin-top: 10px;
+}
+
+.bits-heading {
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.bits-para {
+    font-size: 1rem;
+}
+
+.bits-li {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bits-ul > li {
+    margin-top: 10px;
+    list-style-type: disc;
+}
+
+#Contact {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+.closing {
+    font-size: 1.5rem;
+    max-width: 75vw;
+    margin: 0 auto;
+    padding: 3.5rem;
+    border: 2px solid #000000;
+}
+
+.closing > h5 {
+    padding-bottom: 2rem;
+}
+
+#email {
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: .5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#email > a {
+    font-size: 1.1rem;
+    background-color: #000000;
+    color: #fafafa;
+    padding: 10px 30px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    transition: background-color .6s, border 1s, border-radius .6s, color .6s;
+}
+
+#email > a:hover {
+    color: #ffb62e;
+    background-color: transparent;
+    border: 1px solid #ffb62e;
+    border-radius: 0px;
+}
+
+#Contact2 {
+    width: 100%;
+    height: 40vh;
+    margin-top: 1rem;
+    background-color: #000000;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    word-wrap: break-word;
+    color: #fafafa;
+}
+
+#Contact2 > p {
+    font-size: .8rem;
+}
+
+.footer-links {
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+}
+
+.social {
+    color: #ffffff;
+    height: 30px;
+    width: auto;
+    padding: 0 .8rem .1rem .8rem;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    transition: background-color .3s;  
+}
+
+.social:hover {
+    background-color: #ffb62e;
+}
+
+@media screen and (max-width: 915px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .header {
+        background-color: #fafafa;
+    }
+
+    .about-me {
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    #main {
+        width: 90vw;
+        margin: 50px auto;
+        flex-direction: column;
+    }   
+    
+    .bits-li {
+        flex-direction: column;
+    }
+}

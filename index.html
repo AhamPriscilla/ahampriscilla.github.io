@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Priscilla Ahamefula" />
+    <!--Font Awesome Icons Social & Responsive Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Icons End here-->
+    <!--Font starts here Source sans pro-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--Font starts here Homemade Apple For the Logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <!--Fonts Ends here-->
+    <link rel="stylesheet" href="Portfolio.css" />
+    <title>Aham Priscilla Ux Portfolio </title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" id="logo">Aham.</a>
+            <ul class="nav-menu" id="nav-menu">
+                <!--By default this will have a hamburger menu so 
+                    that it is always ready for responsive design-->
+                <li class="nav-item">
+                    <a href="#index.html" class="nav-link">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html#Contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <!--Creates a hamburger-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="Welcome">
+        <div>
+            <img class="welcome-pic"
+                src="https://lh3.googleusercontent.com/xLgfpwvAAPXWdFgmRQuDPbdLCvz6v_ebQApvjA8-irW_QLl5dthCpkzXh5lDFtRLXPy9mzpA5pgKXXz5oDTtnzGmvvv1cW2nexpejXCjYN5rqtRE14PDG6kSepkgz4Se0loFmXGSog=w2400"
+                alt="A flat illustration of a hand coming out of a laptop"/>
+        </div>
+
+        <div class="welcome-intro">
+            <div class="hello">
+                <h1>
+                    Hi, I'm Priscilla!
+                </h1>
+            </div>
+        
+            <div id="more">
+                I'm a Ux designer & Coder with an obsession for listening to 
+                <br>great music, creating illustrative art & trying new technology.
+                <br>I &#128150; creating simple, intuitive experiences for people.
+            </div>
+        
+            <div class="about-link">
+                <a href="about.html" id="about-me">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Here in works, I finally got the hover text overlay right!!!-->
+    <div id="Works">
+        <h2>Case Studies</h2>
+        <div class="Projects" id="cinema">
+            <div class="container">
+                <a href="cinema.html">
+                    <img class="project-pic"
+                        src="https://lh3.googleusercontent.com/pbpx0X5XIsJ1Md2SlKhCoKB6oXIHRMgfuOWCmUgtinJW5IMHJq754LXMYU6UuoV6t7XB6di2ulUqzKZWcCl0qT5IOtKqDEzSQHFgtOFvmVvYvQUtIy8UuoLaxWD7ynJ-w_vx8nIc3A=w2400"
+                        alt="African Girl using O3 Cinema app" />
+                    <div class="overlay">
+                        <div class="text">
+                            Complete Ux design for O3 Cinema Movie Ticketing 
+                            app that aims to bring movie lovers together by 
+                            making the movie booking process simple & fun.
+                            <div id="text-2">
+                                See Case Study
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <div class="Projects" id="ombre">
+            <div class="container">
+                <a href="#" target="_blank">
+                    <img class="project-pic"
+                        src="https://lh3.googleusercontent.com/CgHMESOmvMNSZX9CMwAbvz6EyamBG51diyfiNP8gIxIt2Yh9bgZpSQ6SZ5KwAQdmSYn1KnfDl7pR-6eaq4Vgj17GJxIg9jCx2v3oRjOiF_fWR3S3jLpOLBBIyFLKgNJKHfizy-mNaQ=w2400"
+                        alt="The Leather Collective" />
+                    <div class="overlay">
+                        <div class="text">
+                            The Bespoke leather collective<br>
+                            <div id="text-3">
+                                Coming Soon
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    
+        <div class="Projects" id="future">
+            
+        </div>
+    </div>
+
+    <!--Start here structuring the work part of the portfolio-->
+
+    <footer id="Contact2">
+        <div class="footer-links">
+            <a href="https://codepen.io/ahampriscilla" class="social" id="codepen" target="_blank" title="See my Source Codes"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M16.5 13.202L13 15.535v3.596L19.197 15 16.5 13.202zM14.697 12L12 10.202 9.303 12 12 13.798 14.697 12zM20 10.869L18.303 12 20 13.131V10.87zM19.197 9L13 4.869v3.596l3.5 2.333L19.197 9zM7.5 10.798L11 8.465V4.869L4.803 9 7.5 10.798zM4.803 15L11 19.131v-3.596l-3.5-2.333L4.803 15zM4 13.131L5.697 12 4 10.869v2.262zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9z"
+                        fill="rgba(247,247,247,1)" />
+                </svg></a>
+        
+            <a href="https://www.linkedin.com/in/priscilla-ahamefula/" class="social" id="linkedin" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"
+                        fill="rgba(255,255,255,1)" />
+                </svg></a>
+        
+            <a href="https://twitter.com/AhamPriscilla" class="social" id="linkedin" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                        fill="rgba(255,255,255,1)" />
+                </svg></a>
+        </div>
+
+        <p>© Febuary 2022. Designed & Built by Aham Priscilla.</p>
+    </footer>
+
+</body>
+<script type="text/javascript" src="Portfolio.js"></script>
+<!--The javascript for the responsive menu put at the end 
+    because javascript runs and executes faster than html and css-->
+
+</html>

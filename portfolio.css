@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Source+Sans+Pro&display=swap');
+/*
+font-family: 'Homemade Apple', cursive; For the logo
+font-family: 'Source Sans Pro', sans-serif; For the Whole Body
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+ /*This ::-webkit features style the scrollbar: sixe, color of draggable bar & color on hover*/
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffb62e;
+}
+
+.header {
+   background-color: transparent;
+   position: fixed;
+   top: 0;
+   width: 100vw;
+   height: auto;
+   z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+#logo {
+    font-family: 'Homemade Apple', cursive;
+    color: #000000;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 1px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+    padding: 0 1.5rem;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+/*Animate the active hamburger each bar at time*/
+/*This will form the x that will be clicked on to close the menu*/
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 4rem;
+    flex-direction: column;
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-item {
+    margin: 2.5rem 0;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #fafafa;
+    transition: color .6s, border-bottom .6s;
+}
+
+.nav-link:hover {
+    color: #ffb62e;
+    border-bottom: 1px solid #ffb62e;
+}
+
+#Welcome {
+    max-width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    text-align: start;
+    cursor: context-menu;
+    padding: 0 2vw;
+}
+
+.welcome-pic {
+    max-width: 400px;
+    height: auto;
+}
+
+.welcome-intro {
+    margin-top: 85px;
+}
+
+.hello {
+    max-width: 100%;
+}
+
+.hello > h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    padding: .5rem 1rem;
+    margin: 0 auto;
+}
+
+#more {
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 1rem;
+    max-width: 100%;
+}
+.about-link {
+    padding-left: 1rem;
+    padding-top: 50px;
+    max-width: fit-content;
+}
+
+#about-me {
+    display: inline-block;
+    color: #fafafa;
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: background-color .6s, color .6s, border .6s, border-radius .6s;
+}
+
+#about-me:hover {
+    color: #ffb62e;
+    border: 1px solid #ffb62e;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+/*Start designing the works from here*/
+#Works {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+#Works > h2 {
+    color: #1d0e04;
+    font-size: 1rem;
+    padding: 1rem;
+    border-bottom: 1px dashed grey;
+}
+
+.Projects {
+    width: 80vw;
+    height: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*Text overlay and image styling starts here*/
+
+.container {
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.project-pic {
+    border-radius: 25px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: #fafafa;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#text-2 {
+    background-color: transparent;
+    border: 1px solid #fafafa;
+    color: #fafafa;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 30px;
+    font-size: 1rem;
+    transition: color .6s, border .6s, border-radius .6s;
+}   
+
+#text-2:hover {
+    color: #ffb62e;
+    border: 1px solid #ffb62e;
+    border-radius: 0px;
+}
+
+#text-3 {
+    background-color: transparent;
+    border: 1px solid #fafafa;
+    color: #fafafa;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    transition: color .6s, border .6s, border-radius .6s;
+}   
+
+#text-3:hover {
+    color: #ffb62e;
+    border: 1px solid #ffb62e;
+    border-radius: 0px;
+}
+/*Text overlay and image styling ends here*/
+
+#Contact2 {
+    width: 100%;
+    height: 40vh;
+    margin-top: 1rem;
+    background-color: #000000;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    word-wrap: break-word;
+    color: #fafafa;
+}
+
+#Contact2 > p {
+    font-size: .8rem;
+}
+
+.footer-links {
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+}
+
+.social {
+    color: #ffffff;
+    height: 30px;
+    width: auto;
+    padding: 0 .8rem .1rem .8rem;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    transition: background-color .3s;  
+}
+
+.social:hover {
+    background-color: #ffb62e;
+}
+
+@media screen and (max-width: 915px) {
+    #Process {
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .header {
+        background-color: #fafafa;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .welcome-intro {
+        margin-top: 30px;
+    }
+
+    #Welcome {
+        max-width: 90vw;
+        flex-direction: column;
+        margin: 50px auto;
+    }    
+}
