@@ -102,8 +102,8 @@ a {
 }
 
 .nav-link:hover{
-    color: #e5e5e5;
-     border-bottom: 1px solid #e5e5e5;
+    color: #c09175;
+     border-bottom: 1px solid #c09175;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -137,8 +137,8 @@ a {
     }
     
     .nav-link:hover{
-        color: #000000;
-         border-bottom: 1px solid #000000;
+        color: #c09175;
+         border-bottom: 1px solid #c09175;
     }
 
     .hamburger {
@@ -181,8 +181,8 @@ a {
 }
 
 .designer:hover {
-    color: #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    color: #c09175;
+    border-bottom: 1px solid #c09175;
 }
 
 .email-link {
@@ -203,8 +203,8 @@ a {
 }
 
 #email:hover {
-    color: #000000;
-    border: 1px solid #e5e5e5;
+    color: #c09175;
+    border: 1px solid #c09175;
     border-radius: 0px;
     background-color: transparent;
 }
@@ -247,8 +247,8 @@ a {
 }
 
 .social:hover {
-    color: #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    color: #c09175;
+    border-bottom: 1px solid #c09175;
 }
 
 #Contact > p {
